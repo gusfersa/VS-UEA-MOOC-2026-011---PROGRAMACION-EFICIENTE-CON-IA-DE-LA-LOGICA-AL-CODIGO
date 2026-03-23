@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         Ejemplos reales de código ineficiente, con bugs y malas prácticas que enfrentarás en proyectos reales.
                     </p>
                     <!-- ERROR 1: Url no está importado correctamente -->
-                    <a href="<?= $badUrl ?>" class="btn btn-module3-secondary">
+                    <a href="<?= Url::to(['/module3/buggy-code']) ?>" class="btn btn-module3-secondary">
                         Ver código problemático
                     </a>
                 </div>
@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         Soluciones mejoradas con explicaciones de cómo la IA nos ayudó a refactorizar y optimizar.
                     </p>
                     <!-- ERROR 2: Función que no existe -->
-                    <a href="<?= generateUrl('/module3/optimized-code') ?>" class="btn btn-module3-primary">
+                    <a href="<?= Url::to(['/module3/optimized-code']) ?>" class="btn btn-module3-primary">
                         Ver código optimizado
                     </a>
                 </div>
