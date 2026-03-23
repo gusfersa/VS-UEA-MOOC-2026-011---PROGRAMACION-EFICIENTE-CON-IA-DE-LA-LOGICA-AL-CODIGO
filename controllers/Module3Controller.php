@@ -13,7 +13,7 @@ class Module3Controller extends Controller
     public function actionIndex()
     {
         // ERROR 1: Variable undefined $titulo
-        echo "Bienvenido a " . $titulo;
+        // Comentario: Usar variable no definida causaría error
         return $this->render('index');
     }
 
@@ -25,12 +25,12 @@ class Module3Controller extends Controller
     {
         // ERROR 2: Comparación débil y lógica incorrecta
         $access_level = 1;
-        if ($access_level == "1") {  // Debería ser ===
+        if ($access_level === "1") {  // Corrección: usar ===
             $permission = true;
         }
         
-        // ERROR 3: Array mal formado
-        $data = array('name' => 'Test' 'age' => 25);
+        // ERROR 3: Array mal formado - CORREGIDO
+        $data = array('name' => 'Test', 'age' => 25);
         
         return $this->render('buggy-code');
     }
