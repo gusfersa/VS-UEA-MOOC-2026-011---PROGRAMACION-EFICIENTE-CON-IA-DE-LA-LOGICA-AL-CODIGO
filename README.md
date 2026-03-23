@@ -267,7 +267,39 @@ sudo chown -R $(whoami) web/assets
 
 ---
 
-## 🤝 Contribuciones
+## 📚 Documentación Técnica
+
+Este proyecto incluye documentación técnica completa para desarrolladores y agentes de IA:
+
+### 📖 Documentación Principal
+
+- **[AGENTS.md](./AGENTS.md)** - 🤖 Guía para agentes de IA sobre cómo trabajar con el proyecto
+- **[/docs/INDEX.md](./docs/INDEX.md)** - 📍 Índice principal de documentación técnica
+- **[/docs/FRAMEWORK.md](./docs/FRAMEWORK.md)** - 🔧 Detalles técnicos de Yii 2.0
+- **[/docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md)** - 🏗️ Arquitectura MVC del proyecto
+- **[/docs/GIT_VERSION_CONTROL.md](./docs/GIT_VERSION_CONTROL.md)** - 📦 Git y control de versiones
+- **[/docs/DOCUMENTATION.md](./docs/DOCUMENTATION.md)** - 📝 Guía de documentación
+
+### 🎯 Lecturas por Perfil
+
+**Para desarrolladores:**
+1. ARCHITECTURE.md
+2. FRAMEWORK.md
+3. GIT_VERSION_CONTROL.md
+4. CONTRIBUTING.md (próximamente)
+
+**Para agentes de IA:**
+1. AGENTS.md (este archivo)
+2. /docs/INDEX.md
+3. /docs/FRAMEWORK.md
+4. /docs/ARCHITECTURE.md
+
+**Para estudiantes:**
+1. README.md (este archivo)
+2. /docs/MODULES.md (próximamente)
+3. /docs/SETUP_DEVELOPMENT.md (próximamente)
+
+---
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o haz un pull request con tus sugerencias.
 
