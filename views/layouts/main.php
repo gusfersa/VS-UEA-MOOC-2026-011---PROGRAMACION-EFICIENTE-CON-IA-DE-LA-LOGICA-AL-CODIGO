@@ -40,6 +40,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Inicio', 'url' => ['/site/index']],
+            ['label' => 'Módulo 3', 'url' => ['/module3']],
             ['label' => 'Acerca de', 'url' => ['/site/about']],
             ['label' => 'Contacto', 'url' => ['/site/contact']],
         ]
