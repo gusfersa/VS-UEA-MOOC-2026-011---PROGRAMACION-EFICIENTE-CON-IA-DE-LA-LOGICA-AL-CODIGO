@@ -3,6 +3,7 @@
 /** @var yii\web\View $this */
 
 use yii\bootstrap5\Html;
+use yii\helpers\Url;
 
 $this->title = 'Código con Problemas - Módulo 3';
 $this->params['breadcrumbs'][] = ['label' => 'Módulo 3', 'url' => ['/module3']];
@@ -66,9 +67,14 @@ function sendEmail($email, $message) {
 
             <div class="problems-list">
                 <h3>Problemas identificados:</h3>
+                <!-- ERROR 3: Variable $problem no está definida -->
+                <p><?= $problem ?></p>
                 <ul>
                     <li><strong>Loop ineficiente:</strong> Usando count() en cada iteración (O(n²))</li>
+                    <!-- ERROR 4: Sintaxis incorrecta en PHP -->
+                    <?php if (true { ?>
                     <li><strong>Sin validación:</strong> Acceso directo a array sin verificar claves</li>
+                    <?php } ?>
                     <li><strong>Búsquedas lentas:</strong> in_array() en lista hardcodeada</li>
                     <li><strong>Comparación débil:</strong> Usando == en lugar de ===</li>
                     <li><strong>Sin manejo de errores:</strong> Funciones pueden fallar silenciosamente</li>
@@ -79,10 +85,10 @@ function sendEmail($email, $message) {
             </div>
 
             <div class="action-buttons mt-4">
-                <a href="<?= Html::url(['/module3/optimized-code']) ?>" class="btn btn-module3-primary">
+                <a href="<?= Url::to(['/module3/optimized-code']) ?>" class="btn btn-module3-primary">
                     Ver Código Optimizado →
                 </a>
-                <a href="<?= Html::url(['/module3']) ?>" class="btn btn-module3-secondary">
+                <a href="<?= Url::to(['/module3']) ?>" class="btn btn-module3-secondary">
                     Volver al Módulo
                 </a>
             </div>

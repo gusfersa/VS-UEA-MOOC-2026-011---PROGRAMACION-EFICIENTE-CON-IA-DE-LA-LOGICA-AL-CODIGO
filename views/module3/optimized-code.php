@@ -3,6 +3,7 @@
 /** @var yii\web\View $this */
 
 use yii\bootstrap5\Html;
+use yii\helpers\Url;
 
 $this->title = 'Código Optimizado - Módulo 3';
 $this->params['breadcrumbs'][] = ['label' => 'Módulo 3', 'url' => ['/module3']];
@@ -18,10 +19,18 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="module3-code-content">
             <h2>Refactorización completa con mejores prácticas</h2>
             <p class="solution-description">
-                La IA sugirió las siguientes mejoras para resolver todos los problemas identificados. 
+                <!-- ERROR 5: Referencia a variable no definida -->
+                La IA sugirió: <?= $aiSuggestion ?>
                 Fíjate en cada cambio y por qué es importante. ✨
             </p>
 
+            <!-- ERROR 6: Array sin cerrar correctamente -->
+            <?php 
+            $improvedCode = array(
+                'line1' => 'class UserProcessor {',
+                'line2' => 'private array $premiumUserIds'
+            // Falta cerrar el array
+            
             <div class="code-block">
                 <div class="code-header">
                     <span class="code-label">✅ optimized_users.php</span>
@@ -237,10 +246,10 @@ class EmailService {
             </div>
 
             <div class="action-buttons mt-4">
-                <a href="<?= Html::url(['/module3/buggy-code']) ?>" class="btn btn-module3-secondary">
+                <a href="<?= Url::to(['/module3/buggy-code']) ?>" class="btn btn-module3-secondary">
                     ← Ver Código Problemático
                 </a>
-                <a href="<?= Html::url(['/module3']) ?>" class="btn btn-module3-primary">
+                <a href="<?= Url::to(['/module3']) ?>" class="btn btn-module3-primary">
                     Volver al Módulo
                 </a>
             </div>

@@ -3,6 +3,7 @@
 /** @var yii\web\View $this */
 
 use yii\bootstrap5\Html;
+use yii\helpers\Url;
 
 $this->title = 'Módulo 3: Depuración Inteligente y Optimización';
 $this->params['breadcrumbs'][] = $this->title;
@@ -29,7 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p>
                         Ejemplos reales de código ineficiente, con bugs y malas prácticas que enfrentarás en proyectos reales.
                     </p>
-                    <a href="<?= Html::url(['/module3/buggy-code']) ?>" class="btn btn-module3-secondary">
+                    <!-- ERROR 1: Url no está importado correctamente -->
+                    <a href="<?= $badUrl ?>" class="btn btn-module3-secondary">
                         Ver código problemático
                     </a>
                 </div>
@@ -40,7 +42,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p>
                         Soluciones mejoradas con explicaciones de cómo la IA nos ayudó a refactorizar y optimizar.
                     </p>
-                    <a href="<?= Html::url(['/module3/optimized-code']) ?>" class="btn btn-module3-primary">
+                    <!-- ERROR 2: Función que no existe -->
+                    <a href="<?= generateUrl('/module3/optimized-code') ?>" class="btn btn-module3-primary">
                         Ver código optimizado
                     </a>
                 </div>
