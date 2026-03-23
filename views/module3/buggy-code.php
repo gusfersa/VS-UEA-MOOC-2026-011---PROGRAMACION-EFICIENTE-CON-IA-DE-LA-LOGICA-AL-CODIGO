@@ -68,11 +68,11 @@ function sendEmail($email, $message) {
             <div class="problems-list">
                 <h3>Problemas identificados:</h3>
                 <!-- ERROR 3: Variable $problem no está definida -->
-                <p><?= $problem ?></p>
+                <!-- COMENTARIO: La variable $problem no está definida en el controlador -->
                 <ul>
                     <li><strong>Loop ineficiente:</strong> Usando count() en cada iteración (O(n²))</li>
-                    <!-- ERROR 4: Sintaxis incorrecta en PHP -->
-                    <?php if (true { ?>
+                    <!-- ERROR 4: Sintaxis incorrecta en PHP - Paréntesis faltante -->
+                    <?php if (true) { ?>
                     <li><strong>Sin validación:</strong> Acceso directo a array sin verificar claves</li>
                     <?php } ?>
                     <li><strong>Búsquedas lentas:</strong> in_array() en lista hardcodeada</li>
