@@ -2,52 +2,47 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+$this->title = 'Programación Eficiente con IA: De la Lógica al Código';
 ?>
 <div class="site-index">
-
-    <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+    <section class="course-hero">
+        <div class="course-card text-center">
+            <p class="course-tag">VS-UEA-MOOC-2026-011</p>
+            <h1>Programación Eficiente con <span>IA</span></h1>
+            <h2 class="course-subtitle">De la Lógica al Código</h2>
+            <div class="course-actions">
+                <a class="btn btn-course-primary" href="#contenido">Ver contenido</a>
+                <a class="btn btn-course-secondary" href="#inscripcion">Inscribirme</a>
             </div>
         </div>
+    </section>
 
-    </div>
+    <section class="body-content" id="contenido">
+        <div class="row g-3">
+            <div class="col-lg-4">
+                <article class="course-feature h-100">
+                    <h2>Lógica Inteligente</h2>
+                    <p>
+                        Comprende cómo diseñar algoritmos optimizados con IA para resolver problemas complejos.
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <article class="course-feature h-100">
+                    <h2>Código Eficiente</h2>
+                    <p>
+                        Escribe soluciones profesionales, mantenibles y escalables con las mejores prácticas.
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-4" id="inscripcion">
+                <article class="course-feature h-100">
+                    <h2>Aplicación Real</h2>
+                    <p>
+                        Desarrolla proyectos reales y construye un portafolio competitivo en el mercado tech.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
 </div>
