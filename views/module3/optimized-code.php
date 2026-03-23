@@ -19,18 +19,10 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="module3-code-content">
             <h2>Refactorización completa con mejores prácticas</h2>
             <p class="solution-description">
-                <!-- ERROR 5: Referencia a variable no definida -->
-                La IA sugirió: <?= $aiSuggestion ?>
+                La IA sugirió las siguientes mejoras para resolver todos los problemas identificados. 
                 Fíjate en cada cambio y por qué es importante. ✨
             </p>
 
-            <!-- ERROR 6: Array sin cerrar correctamente -->
-            <?php 
-            $improvedCode = array(
-                'line1' => 'class UserProcessor {',
-                'line2' => 'private array $premiumUserIds'
-            // Falta cerrar el array
-            
             <div class="code-block">
                 <div class="code-header">
                     <span class="code-label">✅ optimized_users.php</span>
