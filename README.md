@@ -172,8 +172,13 @@ mooc-ia/
 
 ### ✅ Módulo 3: Depuración Inteligente y Optimización
 - [📍 Acceder](/web/index.php?r=module3)
-- Contiene ejemplos de código con problemas comunes
-- Muestra cómo los agentes de IA identifican y resuelven errores
+- **Ejemplos de enseñanza:** Contiene código con errores intencionales
+- **Propósito educativo:** Aprende a identificar bugs y malas prácticas
+- **Con agentes de IA:** Muestra cómo la IA ayuda a depurar y optimizar código
+- **3 secciones:**
+  - Página principal del módulo
+  - Ejemplos de código con problemas
+  - Soluciones optimizadas con mejores prácticas
 
 ### ✅ Módulo 4: Documentación y Testing
 - [📍 Próxima publicación]
